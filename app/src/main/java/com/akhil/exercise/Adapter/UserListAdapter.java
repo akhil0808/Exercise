@@ -125,6 +125,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
             cancel = (LinearLayout) itemView.findViewById(R.id.cancel);
             connect = (LinearLayout) itemView.findViewById(R.id.connect);
             profile_img = (ImageView) itemView.findViewById(R.id.profile_img);
+            decline_img_bck = (ImageView) itemView.findViewById(R.id.decline_img_bck);
+            accept_img_bck = (ImageView) itemView.findViewById(R.id.accept_img_bck);
 
         }
     }
