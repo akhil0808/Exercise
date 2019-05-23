@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Exercise</string>
+    <string name="decline">Decline</string>
+    <string name="connect">Connect</string>
+    <string name="space">\u0020</string>
+    <string name="few_hours_ago">few hours ago</string>
+</resources>
