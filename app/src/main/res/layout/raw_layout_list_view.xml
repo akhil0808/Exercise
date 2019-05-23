@@ -137,7 +137,8 @@
                         <com.akhil.exercise.Custom_View.CircleImageView
                             android:layout_width="@dimen/size_70"
                             android:layout_height="@dimen/size_70"
-                            tools:ignore="ContentDescription"/>
+                            tools:ignore="ContentDescription"
+                          />
 
                         <com.akhil.exercise.Custom_View.CircleImageView
                             android:id="@+id/decline_img_bck"

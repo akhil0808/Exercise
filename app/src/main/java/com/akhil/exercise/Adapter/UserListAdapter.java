@@ -39,7 +39,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
     }
 
     @Override
-    public void onBindViewHolder(@NonNull UserListAdapter.MyViewHolder myViewHolder, final int i) {
+    public void onBindViewHolder(@NonNull final UserListAdapter.MyViewHolder myViewHolder, final int i) {
         final ResultList resultList = resultLists.get(i);
 
 
@@ -54,6 +54,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
             @Override
             public void onClick(View v) {
                 slideView(v, i, R.anim.slide_out_left);
+                myViewHolder.accept_img_bck.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.color_acc));
             }
         });
 
@@ -69,6 +70,8 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
             @Override
             public void onClick(View v) {
                 slideView(v, i, R.anim.slide_out_right);
+                myViewHolder.decline_img_bck.setBackgroundDrawable(context.getResources().getDrawable(R.drawable.colour_back));
+
             }
         });
 
@@ -107,7 +110,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView title, time_register, fast_name, last_name, age, city, state;
 
-        ImageView profile_img;
+        ImageView profile_img,decline_img_bck,accept_img_bck;
         LinearLayout connect, cancel;
 
 
