@@ -53,9 +53,10 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
         myViewHolder.connect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                slideView(v, i, R.anim.slide_out_right);
+                slideView(v, i, R.anim.slide_out_left);
             }
         });
+
 
         Picasso.with(context)
                 .load(resultLists.get(i).getLarge())
@@ -67,7 +68,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.MyView
         myViewHolder.cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                slideView(v, i, R.anim.slide_out_left);
+                slideView(v, i, R.anim.slide_out_right);
             }
         });
 
